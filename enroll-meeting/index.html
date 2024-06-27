@@ -5,22 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>모임 등록하기</title>
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/bootstrap.css">
+    <link rel="stylesheet" href="/enroll-meeting/styles.css">
 </head>
 <body>
     <div class="form-container">
-        <nav>
-            <ul>
-                <a href="#"><img class="logo" src="/logo.png" alt="logo"></a>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
+
+<!-------------------------------------------------- navbar -------------------------------------------------->
+        <nav class="navbar">
+
+            <div class="nav_logo">
+                <img class="logo" src="/enroll-meeting/logo.png" alt="logo">
+                <a href="#">Eat IT</a>
+            </div>
+             
+            <ul class="nav_menu">
+                <li><a href="#">홈</a></li>
+                <li><a href="#">모임등록</a></li>
+                <li><a href="#">모임찾기</a></li>
+                <li><a href="#">후기</a></li>
                 
             </ul>
+            <ul class="nav_users">
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">로그아웃</a></li>
+            </ul>
+
         </nav>
+<!--------------------------------------------------  -------------------------------------------------->
+
         <h1>모임 등록하기</h1>
+
         <form>
             <div class="form-group">
                 <label for="meeting-place">약속 장소</label>
@@ -37,18 +51,26 @@
             <div class="form-group">
                 <label>지불방식</label>
                 <div class="checkbox-group">
-                    <label><input type="radio" name="support-method" value="face-to-face"/> 더치페이</label>
-                    <label><input type="radio" name="support-method" value="online"/> 골든벨</label>
+                    <div><input type="radio" name="support-method" value="face-to-face"/> 더치페이</div>
+                    <div><input type="radio" name="support-method" value="online"/> 골든벨</div>
                 </div>
             </div>
             <div class="form-group">
                 <label for="meeting-type">대화주제</label>
-                <input type="text" id="topics" placeholder="ex) 이직준비, 회사문화, 포트폴리오">
+                <input type="text" id="meeting-type" placeholder="ex) 이직준비, 회사문화, 포트폴리오"/>
             </div>
             <div class="form-group">
                 <label for="topics">관심분야</label>
-                <input type="text" id="interest" name="topics" placeholder="ex) 백엔드, 프론트엔드, 자바, 스프링, 도커, 인공지능 등"/>
+                <input type="text" id="topics" name="topics" placeholder="ex) 백엔드, 프론트엔드, 자바, 스프링, 도커, 인공지능 등"/>
             </div>
+            <div class="form-group">
+                <div class="upload-container">
+                    <label class="upload-box">다이닝 대표 사진을 등록해 주세요.
+                    
+                        <input type="file" multiple>
+                        <div class="upload-icon">📷</div>
+                    </label>
+                </div>
             <div class="form-group">
                 <label for="date">다음의 날짜를 선택하세요</label>
                 <input type="date" id="date" name="date"/>
@@ -56,10 +78,10 @@
             <div class="form-group">
                 <label for="duration">퇴장 제한 시간</label>
                 <div class="time-group">
-                    <label><input type="radio" name="duration" value="no-limit"/> 제한없음</label>
-                    <label><input type="radio" name="duration" value="1-hour"/> 1시간</label>
-                    <label><input type="radio" name="duration" value="2-hours"/> 2시간</label>
-                    <label><input type="radio" name="duration" value="3-hours"/> 3시간</label>
+                    <div><input type="radio" name="duration" value="no-limit"/> 제한없음</div>
+                    <div><input type="radio" name="duration" value="1-hour"/> 1시간</div>
+                    <div><input type="radio" name="duration" value="2-hours"/> 2시간</div>
+                    <div><input type="radio" name="duration" value="3-hours"/> 3시간</div>
                 </div>
             </div>
             <div class="form-group">
@@ -113,6 +135,6 @@
             </div>
         </form>
     </div>
-    <script src="script.js"></script>
+    <script src="/enroll-meeting/script.js"></script>
 </body>
 </html>
