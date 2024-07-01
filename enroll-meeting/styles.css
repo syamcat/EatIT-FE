@@ -89,11 +89,13 @@ form {
     margin-bottom: 15px;
     width: 420px;
 }
+
 .form-group label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
+
 .form-group input, 
 .form-group select, 
 .form-group textarea {
@@ -163,17 +165,17 @@ form {
     border-radius: 10px;
     cursor: pointer;
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .upload-box input[type="file"] {
     display: none;
 }
-.upload-box::after {
-    content: "0/5";
+.upload-box #file-count {
     position: absolute;
     bottom: 10px;
     font-size: 14px;
@@ -182,6 +184,45 @@ form {
 .upload-icon {
     font-size: 50px;
     color: #ccc;
+}
+.image-preview {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.image-preview .image-container {
+    position: relative;
+    display: inline-block;
+}
+.image-preview img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.image-preview .remove-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.upload-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
