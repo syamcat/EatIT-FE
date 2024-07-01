@@ -114,7 +114,7 @@
 .topbar .top-link a small:hover i {
     color: var(--bs-primary) !important;
 }
-/*** Topbar End ***/
+/** Topbar End ***/
 
 /*** Navbar Start ***/
 .navbar .navbar-nav .nav-link {

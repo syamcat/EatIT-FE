@@ -31,100 +31,126 @@
     <link href="css/style.css" rel="stylesheet">
     <style>
         .logo {
-                width: 100px;
-                height: 100px;
-            }
-            .payments-logo {
-                width: 15px;
-                height: 15px;
-            }
-            .header-button {
-                font: size 30px;
-                background-color: white;
-                /* color: black; */
-                /* border-color: black; */
-            }
-            .leader-data {
-                border: solid black;
-                border-radius: 2%;
-                box-shadow: insert;
-            }
-            .profile-image {
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-            }
-            .leader-rate {
-                text-align: center;
-            }
-            .round-corner-print-green {
-                background-color: white;
-                color: #49D188;
-                border-color: #49D188;
-                border-radius: 150px;
-                text-align: center;
-            }
-            .border-radius-right-left {
-                border-radius: 150px;
-            }
-            .align-center {
-                text-align: center;
-            }
-            /* .container-fluid.py-5.mt-5{
+            width: 100px;
+            height: 100px;
+        }
+
+        .payments-logo {
+            width: 15px;
+            height: 15px;
+        }
+
+        .header-button {
+            font: size 30px;
+            background-color: white;
+            /* color: black; */
+            /* border-color: black; */
+        }
+
+        .leader-data {
+            border: solid black;
+            border-radius: 2%;
+            box-shadow: insert;
+        }
+
+        .profile-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        .leader-rate {
+            text-align: center;
+        }
+
+        .round-corner-print-green {
+            background-color: white;
+            color: #49D188;
+            border-color: #49D188;
+            border-radius: 150px;
+            text-align: center;
+        }
+
+        .border-radius-right-left {
+            border-radius: 150px;
+        }
+
+        .align-center {
+            text-align: center;
+        }
+
+        /* .container-fluid.py-5.mt-5{
                 border: solid black;
                 border-top-left-radius: 25px;
                 border-top-right-radius: 25px;
             } */
-             /* 컨텐츠를 가로로 배열하는 부분 .contents-container .contents-container-item */
-            .contents-container {
+        /* 컨텐츠를 가로로 배열하는 부분 .contents-container .contents-container-item */
+        .contents-container {
             display: flex;
-            }
-            .contents-container-item {
-                width: 100px;
-                height: 100px;
-                margin: 10px;
-                background-color: white;
-            }
-            .padding-bottom-20px {
-                padding-bottom: 20px;
-            }
-            .padding-left-20px {
-                padding-left: 20px;
-            }
-            .padding-left-100px {
-                padding-left: 20px;
-            }
-            .padding-top-20px {
-                padding-top: 20px;
-            }
-            .header-menu-active {
-                color: #FF0000 !important;
-            }
-            .hashtag {
-                background-color: #FF0000 ;
-                color: white;
-                align-content: center;
-                border-radius: 50px;
-                height: 30px;
-            }
-            .page-header {
-                position: relative;
-                height: 300px;
-                background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/front_image.png);
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            .div-center {
-                align-content: center;
-            }
-            .bg-secondary-active {
-                background-color: #FF0000;
-            }
-            .search-profile-img {
-                width: 30px;
-                height: 30px;
-            }
+        }
+
+        .contents-container-item {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: white;
+        }
+
+        .padding-bottom-20px {
+            padding-bottom: 20px;
+        }
+
+        .padding-left-20px {
+            padding-left: 20px;
+        }
+
+        .padding-left-100px {
+            padding-left: 20px;
+        }
+
+        .padding-top-20px {
+            padding-top: 20px;
+        }
+
+        .header-menu-active {
+            color: #FF0000 !important;
+        }
+
+        .hashtag {
+            background-color: #FF0000;
+            color: white;
+            align-content: center;
+            border-radius: 50px;
+            height: 30px;
+        }
+
+        .page-header {
+            position: relative;
+            height: 300px;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/front_image.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .div-center {
+            align-content: center;
+        }
+
+        .active-red {
+            color: #fff;
+            background-color: #FF0000;
+        }
+
+        .unactive {
+            color: black;
+            background-color: gray;
+        }
+
+        .search-profile-img {
+            width: 30px;
+            height: 30px;
+        }
     </style>
 </head>
 
@@ -158,14 +184,15 @@
         <div class="container px-0">
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="index.html" class="navbar-brand"><img class=logo src="/img/logo.png"/></a>
-                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <a href="index.html" class="navbar-brand"><img class=logo src="/img/logo.png" /></a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
                             <a href="index.html" class="nav-item nav-link">홈</a>
-                            <a href="shop.html" class="nav-item nav-link">모임 등록하기</a>
+                            <a href="list.html" class="nav-item nav-link">모임 등록하기</a>
                             <a href="detail.html" class="nav-item nav-link header-menu-active">모임 찾기</a>
                             <!-- <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -177,21 +204,17 @@
                                 </div> -->
                             <!-- </div> -->
                             <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
-                            <a href="#" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#searchModal">검색</a>
-                            
+                            <a href="#" class="nav-item nav-link" data-bs-toggle="modal"
+                                data-bs-target="#searchModal">검색</a>
+
                         </div>
                         <div class="d-flex m-3 me-0">
-                            <!-- <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button> -->
-                            <a href="#" class="position-relative me-4 my-auto">
-                                <!-- <i class="fa fa-shopping-bag fa-2x"></i> -->
-                                <button class="border-radius-right-left header-button" onclick="location.href='mypage.html'">마이페이지</button>
-                                <!-- 알림 갯수 -->
-                                <!-- <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span> -->
+                            <a href="#" class="btn-notification my-auto me-4">
+                                <i class="fas fa-bell fa-2x"></i>
                             </a>
-                            <button class="border-radius-right-left header-button" onclick="location.href='logout.html'">로그아웃</button>
-                            <!-- <a href="#" class="my-auto">
-                                <i class="fas fa-user fa-2x"></i>
-                            </a> -->
+                            <!-- JavaScript 파일 연결 -->
+                            <button class="btn btn-danger rounded-pill me-2" id="loginButton">로그인</button>
+                            <button class="btn btn-outline-danger rounded-pill" id="signupButton">회원가입</button>
                         </div>
                     </div>
                 </nav>
@@ -241,7 +264,8 @@
                 <h1>모임 검색</h1>
                 <div class="modal-body d-flex align-items-center">
                     <div class="input-group w-75 mx-auto d-flex">
-                        <input type="search" class="form-control p-3" placeholder="검색어를 입력해주세요." aria-describedby="search-icon-1">
+                        <input type="search" class="form-control p-3" placeholder="검색어를 입력해주세요."
+                            aria-describedby="search-icon-1">
                         <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
                     </div>
                 </div>
@@ -256,8 +280,7 @@
                 </div> -->
                 <ul class="nav nav-pills d-inline-flex text-center mb-5">
                     <li class="nav-item">
-                        <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill"
-                            href="#tab-1">
+                        <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
                             <span class="text-dark" style="width: 130px;">네트워킹</span>
                         </a>
                     </li>
@@ -287,8 +310,7 @@
                 </div> -->
                 <ul class="nav nav-pills d-inline-flex text-center mb-5">
                     <li class="nav-item">
-                        <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill"
-                            href="#tab-1">
+                        <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
                             <span class="text-dark" style="width: 130px;">FE</span>
                         </a>
                     </li>
@@ -488,11 +510,12 @@
                         <div class="col-lg-9">
                             <div class="row g-4 justify-content-center">
                                 <div class="col-md-6 col-lg-6 col-xl-4">
-                                    <div class="rounded position-relative fruite-item" onclick="location.href='detail.html'">
+                                    <div class="rounded position-relative fruite-item"
+                                        onclick="location.href='detail.html'">
                                         <div class="fruite-img">
-                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt=""/>
+                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt="" />
                                         </div>
-                                        <div class="text-white bg-secondary-active px-3 py-1 rounded position-absolute"
+                                        <div class="active-red px-3 py-1 rounded position-absolute"
                                             style="top: 10px; left: 10px;">모집중</div>
                                         <div class="p-4 border  border-top-0 rounded-bottom">
                                             <h4>모임 이름</h4>
@@ -500,10 +523,10 @@
                                             <!-- <div class="d-flex justify-content-between flex-lg-wrap"> -->
                                             <div class="contents-container">
                                                 <p class="cont text-dark fs-5 fw-bold mb-0">1 / 3</p>
-                                                <img src="/img/honeybee_doguri.png" class="search-profile-img"/>
+                                                <img src="/img/honeybee_doguri.png" class="search-profile-img" />
                                                 <!-- <div class="padding-left-100px"></div> -->
-                                                <img src="/img/like.png" class="conte search-profile-img"/>
-                                                <img src="/img/share.png" class="search-profile-img"/>
+                                                <img src="/img/like.png" class="conte search-profile-img" />
+                                                <img src="/img/share.png" class="search-profile-img" />
                                                 <!-- <a href="#"
                                                     class="btn border border-secondary rounded-pill px-3 text-primary"><i
                                                         class="fa fa-shopping-bag me-2 text-primary"></i> Add to
@@ -513,11 +536,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
-                                    <div class="rounded position-relative fruite-item" onclick="location.href='detail.html'">
+                                    <div class="rounded position-relative fruite-item"
+                                        onclick="location.href='detail.html'">
                                         <div class="fruite-img">
-                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt=""/>
+                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt="" />
                                         </div>
-                                        <div class="text-white bg-secondary-active px-3 py-1 rounded position-absolute"
+                                        <div class="active-red px-3 py-1 rounded position-absolute"
                                             style="top: 10px; left: 10px;">모집중</div>
                                         <div class="p-4 border  border-top-0 rounded-bottom">
                                             <h4>모임 이름</h4>
@@ -525,10 +549,10 @@
                                             <!-- <div class="d-flex justify-content-between flex-lg-wrap"> -->
                                             <div class="contents-container">
                                                 <p class="cont text-dark fs-5 fw-bold mb-0">1 / 3</p>
-                                                <img src="/img/honeybee_doguri.png" class="search-profile-img"/>
+                                                <img src="/img/honeybee_doguri.png" class="search-profile-img" />
                                                 <!-- <div class="padding-left-100px"></div> -->
-                                                <img src="/img/like.png" class="conte search-profile-img"/>
-                                                <img src="/img/share.png" class="search-profile-img"/>
+                                                <img src="/img/like.png" class="conte search-profile-img" />
+                                                <img src="/img/share.png" class="search-profile-img" />
                                                 <!-- <a href="#"
                                                     class="btn border border-secondary rounded-pill px-3 text-primary"><i
                                                         class="fa fa-shopping-bag me-2 text-primary"></i> Add to
@@ -538,11 +562,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
-                                    <div class="rounded position-relative fruite-item" onclick="location.href='detail.html'">
+                                    <div class="rounded position-relative fruite-item"
+                                        onclick="location.href='detail.html'">
                                         <div class="fruite-img">
-                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt=""/>
+                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt="" />
                                         </div>
-                                        <div class="text-white bg-secondary-active px-3 py-1 rounded position-absolute"
+                                        <div class="active-red px-3 py-1 rounded position-absolute"
                                             style="top: 10px; left: 10px;">모집중</div>
                                         <div class="p-4 border  border-top-0 rounded-bottom">
                                             <h4>모임 이름</h4>
@@ -550,10 +575,10 @@
                                             <!-- <div class="d-flex justify-content-between flex-lg-wrap"> -->
                                             <div class="contents-container">
                                                 <p class="cont text-dark fs-5 fw-bold mb-0">1 / 3</p>
-                                                <img src="/img/honeybee_doguri.png" class="search-profile-img"/>
+                                                <img src="/img/honeybee_doguri.png" class="search-profile-img" />
                                                 <!-- <div class="padding-left-100px"></div> -->
-                                                <img src="/img/like.png" class="conte search-profile-img"/>
-                                                <img src="/img/share.png" class="search-profile-img"/>
+                                                <img src="/img/like.png" class="conte search-profile-img" />
+                                                <img src="/img/share.png" class="search-profile-img" />
                                                 <!-- <a href="#"
                                                     class="btn border border-secondary rounded-pill px-3 text-primary"><i
                                                         class="fa fa-shopping-bag me-2 text-primary"></i> Add to
@@ -563,11 +588,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
-                                    <div class="rounded position-relative fruite-item" onclick="location.href='detail.html'">
+                                    <div class="rounded position-relative fruite-item"
+                                        onclick="location.href='detail.html'">
                                         <div class="fruite-img">
-                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt=""/>
+                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt="" />
                                         </div>
-                                        <div class="text-white bg-secondary-active px-3 py-1 rounded position-absolute"
+                                        <div class="active-red px-3 py-1 rounded position-absolute"
                                             style="top: 10px; left: 10px;">모집중</div>
                                         <div class="p-4 border  border-top-0 rounded-bottom">
                                             <h4>모임 이름</h4>
@@ -575,10 +601,10 @@
                                             <!-- <div class="d-flex justify-content-between flex-lg-wrap"> -->
                                             <div class="contents-container">
                                                 <p class="cont text-dark fs-5 fw-bold mb-0">1 / 3</p>
-                                                <img src="/img/honeybee_doguri.png" class="search-profile-img"/>
+                                                <img src="/img/honeybee_doguri.png" class="search-profile-img" />
                                                 <!-- <div class="padding-left-100px"></div> -->
-                                                <img src="/img/like.png" class="conte search-profile-img"/>
-                                                <img src="/img/share.png" class="search-profile-img"/>
+                                                <img src="/img/like.png" class="conte search-profile-img" />
+                                                <img src="/img/share.png" class="search-profile-img" />
                                                 <!-- <a href="#"
                                                     class="btn border border-secondary rounded-pill px-3 text-primary"><i
                                                         class="fa fa-shopping-bag me-2 text-primary"></i> Add to
@@ -588,11 +614,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
-                                    <div class="rounded position-relative fruite-item" onclick="location.href='detail.html'">
+                                    <div class="rounded position-relative fruite-item"
+                                        onclick="location.href='detail.html'">
                                         <div class="fruite-img">
-                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt=""/>
+                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt="" />
                                         </div>
-                                        <div class="text-white bg-secondary-active px-3 py-1 rounded position-absolute"
+                                        <div class="active-red px-3 py-1 rounded position-absolute"
                                             style="top: 10px; left: 10px;">모집중</div>
                                         <div class="p-4 border  border-top-0 rounded-bottom">
                                             <h4>모임 이름</h4>
@@ -600,10 +627,10 @@
                                             <!-- <div class="d-flex justify-content-between flex-lg-wrap"> -->
                                             <div class="contents-container">
                                                 <p class="cont text-dark fs-5 fw-bold mb-0">1 / 3</p>
-                                                <img src="/img/honeybee_doguri.png" class="search-profile-img"/>
+                                                <img src="/img/honeybee_doguri.png" class="search-profile-img" />
                                                 <!-- <div class="padding-left-100px"></div> -->
-                                                <img src="/img/like.png" class="conte search-profile-img"/>
-                                                <img src="/img/share.png" class="search-profile-img"/>
+                                                <img src="/img/like.png" class="conte search-profile-img" />
+                                                <img src="/img/share.png" class="search-profile-img" />
                                                 <!-- <a href="#"
                                                     class="btn border border-secondary rounded-pill px-3 text-primary"><i
                                                         class="fa fa-shopping-bag me-2 text-primary"></i> Add to
@@ -613,11 +640,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
-                                    <div class="rounded position-relative fruite-item" onclick="location.href='detail.html'">
+                                    <div class="rounded position-relative fruite-item"
+                                        onclick="location.href='detail.html'">
                                         <div class="fruite-img">
-                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt=""/>
+                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt="" />
                                         </div>
-                                        <div class="text-white bg-secondary-active px-3 py-1 rounded position-absolute"
+                                        <div class="active-red px-3 py-1 rounded position-absolute"
                                             style="top: 10px; left: 10px;">모집중</div>
                                         <div class="p-4 border  border-top-0 rounded-bottom">
                                             <h4>모임 이름</h4>
@@ -625,10 +653,10 @@
                                             <!-- <div class="d-flex justify-content-between flex-lg-wrap"> -->
                                             <div class="contents-container">
                                                 <p class="cont text-dark fs-5 fw-bold mb-0">1 / 3</p>
-                                                <img src="/img/honeybee_doguri.png" class="search-profile-img"/>
+                                                <img src="/img/honeybee_doguri.png" class="search-profile-img" />
                                                 <!-- <div class="padding-left-100px"></div> -->
-                                                <img src="/img/like.png" class="conte search-profile-img"/>
-                                                <img src="/img/share.png" class="search-profile-img"/>
+                                                <img src="/img/like.png" class="conte search-profile-img" />
+                                                <img src="/img/share.png" class="search-profile-img" />
                                                 <!-- <a href="#"
                                                     class="btn border border-secondary rounded-pill px-3 text-primary"><i
                                                         class="fa fa-shopping-bag me-2 text-primary"></i> Add to
@@ -638,11 +666,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
-                                    <div class="rounded position-relative fruite-item" onclick="location.href='detail.html'">
+                                    <div class="rounded position-relative fruite-item"
+                                        onclick="location.href='detail.html'">
                                         <div class="fruite-img">
-                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt=""/>
+                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt="" />
                                         </div>
-                                        <div class="text-white bg-secondary-active px-3 py-1 rounded position-absolute"
+                                        <div class="active-red px-3 py-1 rounded position-absolute"
                                             style="top: 10px; left: 10px;">모집중</div>
                                         <div class="p-4 border  border-top-0 rounded-bottom">
                                             <h4>모임 이름</h4>
@@ -650,10 +679,10 @@
                                             <!-- <div class="d-flex justify-content-between flex-lg-wrap"> -->
                                             <div class="contents-container">
                                                 <p class="cont text-dark fs-5 fw-bold mb-0">1 / 3</p>
-                                                <img src="/img/honeybee_doguri.png" class="search-profile-img"/>
+                                                <img src="/img/honeybee_doguri.png" class="search-profile-img" />
                                                 <!-- <div class="padding-left-100px"></div> -->
-                                                <img src="/img/like.png" class="conte search-profile-img"/>
-                                                <img src="/img/share.png" class="search-profile-img"/>
+                                                <img src="/img/like.png" class="conte search-profile-img" />
+                                                <img src="/img/share.png" class="search-profile-img" />
                                                 <!-- <a href="#"
                                                     class="btn border border-secondary rounded-pill px-3 text-primary"><i
                                                         class="fa fa-shopping-bag me-2 text-primary"></i> Add to
@@ -663,11 +692,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
-                                    <div class="rounded position-relative fruite-item" onclick="location.href='detail.html'">
+                                    <div class="rounded position-relative fruite-item"
+                                        onclick="location.href='detail.html'">
                                         <div class="fruite-img">
-                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt=""/>
+                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt="" />
                                         </div>
-                                        <div class="text-white bg-secondary-active px-3 py-1 rounded position-absolute"
+                                        <div class="active-red px-3 py-1 rounded position-absolute"
                                             style="top: 10px; left: 10px;">모집중</div>
                                         <div class="p-4 border  border-top-0 rounded-bottom">
                                             <h4>모임 이름</h4>
@@ -675,10 +705,10 @@
                                             <!-- <div class="d-flex justify-content-between flex-lg-wrap"> -->
                                             <div class="contents-container">
                                                 <p class="cont text-dark fs-5 fw-bold mb-0">1 / 3</p>
-                                                <img src="/img/honeybee_doguri.png" class="search-profile-img"/>
+                                                <img src="/img/honeybee_doguri.png" class="search-profile-img" />
                                                 <!-- <div class="padding-left-100px"></div> -->
-                                                <img src="/img/like.png" class="conte search-profile-img"/>
-                                                <img src="/img/share.png" class="search-profile-img"/>
+                                                <img src="/img/like.png" class="conte search-profile-img" />
+                                                <img src="/img/share.png" class="search-profile-img" />
                                                 <!-- <a href="#"
                                                     class="btn border border-secondary rounded-pill px-3 text-primary"><i
                                                         class="fa fa-shopping-bag me-2 text-primary"></i> Add to
@@ -688,11 +718,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
-                                    <div class="rounded position-relative fruite-item" onclick="location.href='detail.html'">
+                                    <div class="rounded position-relative fruite-item"
+                                        onclick="location.href='detail.html'">
                                         <div class="fruite-img">
-                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt=""/>
+                                            <img src="img/test_image.png" class="img-fluid w-100 rounded-top" alt="" />
                                         </div>
-                                        <div class="text-white bg-secondary-active px-3 py-1 rounded position-absolute"
+                                        <div class="active-red px-3 py-1 rounded position-absolute"
                                             style="top: 10px; left: 10px;">모집중</div>
                                         <div class="p-4 border  border-top-0 rounded-bottom">
                                             <h4>모임 이름</h4>
@@ -700,10 +731,10 @@
                                             <!-- <div class="d-flex justify-content-between flex-lg-wrap"> -->
                                             <div class="contents-container">
                                                 <p class="cont text-dark fs-5 fw-bold mb-0">1 / 3</p>
-                                                <img src="/img/honeybee_doguri.png" class="search-profile-img"/>
+                                                <img src="/img/honeybee_doguri.png" class="search-profile-img" />
                                                 <!-- <div class="padding-left-100px"></div> -->
-                                                <img src="/img/like.png" class="conte search-profile-img"/>
-                                                <img src="/img/share.png" class="search-profile-img"/>
+                                                <img src="/img/like.png" class="conte search-profile-img" />
+                                                <img src="/img/share.png" class="search-profile-img" />
                                                 <!-- <a href="#"
                                                     class="btn border border-secondary rounded-pill px-3 text-primary"><i
                                                         class="fa fa-shopping-bag me-2 text-primary"></i> Add to
