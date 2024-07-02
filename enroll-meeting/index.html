@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>모임 등록하기</title>
-    <link rel="stylesheet" href="/enroll-meeting/styles.css">
+    <link href="css/styles.css" rel="stylesheet" >
 </head>
 <body>
     <div class="form-container">
@@ -14,7 +14,7 @@
         <nav class="navbar">
 
             <div class="nav_logo">
-                <img class="logo" src="/enroll-meeting/logo.png" alt="logo">
+                <img class="logo" src="images/logo.png" alt="logo">
                 <a href="#">Eat IT</a>
             </div>
              
@@ -40,6 +40,8 @@
                 <label for="meeting-place">약속 장소</label>
                 <input type="text" id="meeting-place" name="meeting-place" placeholder="약속장소를 선택해주세요"/>
             </div>
+            <button type="button" id="show-map-button">지도에서 선택</button>
+            <div id="map" style="height: 400px; width: 100%; display: none;"></div>
             <div class="form-group">
                 <label for="group-name">모임 이름을 입력하세요</label>
                 <input type="text" id="group-name" name="group-name" placeholder="ex) 장소, 대화주제 등 대표 키워드를 포함해주세요"/>
@@ -56,12 +58,18 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="meeting-type">대화주제</label>
-                <input type="text" id="meeting-type" placeholder="ex) 이직준비, 회사문화, 포트폴리오"/>
+                <label for="topics">대화주제</label>
+                <div class="hashtag-container">
+                    <div id="hashtags1"></div>
+                    <input type="text" id="hashtag-input1" name="topics" placeholder="ex) 이직준비, 회사문화, 포트폴리오">
+                </div>
             </div>
             <div class="form-group">
-                <label for="topics">관심분야</label>
-                <input type="text" id="topics" name="topics" placeholder="ex) 백엔드, 프론트엔드, 자바, 스프링, 도커, 인공지능 등"/>
+                <label for="interests">관심분야</label>
+                <div class="hashtag-container">
+                    <div id="hashtags2"></div>
+                    <input type="text" id="hashtag-input2" name="interests" placeholder="ex) 백엔드, 프론트엔드, 자바, 스프링, 도커, 인공지능 등">
+                </div>
             </div>
             <div class="form-group upload-group">
                 <div class="upload-container">
@@ -75,7 +83,7 @@
                 <div class="image-preview" id="image-preview"></div>
             </div>
             <div class="form-group">
-                <label for="date">다음의 날짜를 선택하세요</label>
+                <label for="date">모임 날짜 선택해주세요.</label>
                 <input type="date" id="date" name="date"/>
             </div>
             <div class="form-group">
@@ -111,17 +119,11 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="smoking">흡연 여부</label>
-                <div class="checkbox-group">
-                    <label><input type="radio" name="smoking" value="smoking-ok"/> 흡연 가능</label>
-                    <label><input type="radio" name="smoking" value="non-smoking"/> 비흡연</label>
-                </div>
-            </div>
-            <div class="form-group">
                 <button type="submit">등록하기</button>
             </div>
         </form>
     </div>
-    <script src="/enroll-meeting/script.js"></script>
+    <script src="js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtrF28U4XgcY4rrHUzvKPhOtiOJzbxwRQ&callback=initMap" async defer></script>
 </body>
 </html>
