@@ -565,22 +565,43 @@ button#showAllButton:hover {
 
 /* 메인 이미지 스타일 */
 .main-image {
-    /* 원하는 스타일을 적용하세요 */
-    max-height: none; /* 메인 이미지에는 최대 높이를 제한하지 않음 */
+  /* 원하는 스타일을 적용하세요 */
+  max-height: none; /* 메인 이미지에는 최대 높이를 제한하지 않음 */
 }
 
 /* 다른 이미지 스타일 */
 .other-image {
-    max-height: 140px; /* 다른 이미지의 최대 높이를 140px로 제한 */
+  max-height: 140px; /* 다른 이미지의 최대 높이를 140px로 제한 */
 }
 
 .navbar-brand {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-brand img {
-    max-height: 50px; /* 원하는 크기로 조정 */
-    margin-right: 10px; /* 이미지와 텍스트 사이의 간격 */
+  max-height: 50px; /* 원하는 크기로 조정 */
+  margin-right: 10px; /* 이미지와 텍스트 사이의 간격 */
 }
 
+/*푸터 팀 이미지 css*/
+
+
+.team-member {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.team-member img {
+    width: 100%; /* 이미지 너비 */
+    height: auto; /* 이미지 높이 자동 */
+    margin-bottom: 100px;
+}
+
+.team-member-name {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #000;
+}
