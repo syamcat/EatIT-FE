@@ -34,7 +34,19 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+ <style>
+        .main-image {
+            max-height: none; /* 메인 이미지에는 최대 높이를 제한하지 않음 */
+        }
 
+        .other-image {
+            max-height: 140px; /* 다른 이미지의 최대 높이를 140px로 제한 */
+        }
+
+        .carousel-inner img {
+            vertical-align: middle; /* 모든 이미지에 대해 중간 정렬 */
+        }
+    </style>
       
   </head>
 
@@ -58,7 +70,9 @@
   <div class="container px-0">
     <nav class="navbar navbar-light bg-white navbar-expand-xl">
       <a href="home.html" class="navbar-brand">
+          <img src="/main-page/img/image_145.png" alt="Eat-IT Logo">
         <h1 class="text-primary display-6">Eat-IT</h1>
+        
       </a>
       <button
         class="navbar-toggler py-2 px-3"
@@ -186,22 +200,22 @@
                 <div class="carousel-item active rounded">
                   <img
                     src="https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_640.jpg"
-                    class="img-fluid w-100 h-100 bg-secondary rounded"
+                    class="main-image img-fluid w-100 h-100 bg-secondary rounded"
                     alt="First slide"
                   />
-                  <a href="#" class="btn px-4 py-2 text-white rounded"
+                  <!-- <a href="#" class="btn px-4 py-2 text-white rounded"
                     >즐거운 식사</a
-                  >
+                  > -->
                 </div>
                 <div class="carousel-item rounded">
                   <img
                     src="/main-page/img/image_163.png"
-                    class="img-fluid w-100 h-100 rounded"
+                    class="main-image img-fluid w-100 h-100 rounded"
                     alt="Second slide"
                   />
-                  <a href="#" class="btn px-4 py-2 text-white rounded"
+                  <!-- <a href="#" class="btn px-4 py-2 text-white rounded"
                     >정보 공유</a
-                  >
+                  > -->
                 </div>
               </div>
               <button
@@ -367,12 +381,13 @@
                 <div class="col-lg-12">
                   <div class="row g-4">
                     <!-- 이 부분이 관심 개발 분야 네모 상자인데, 클래스 이름 변경 해야 함!-->
+                     
                     <div class="col-md-6 col-lg-4 col-xl-3">
                       <div class="rounded position-relative fruite-item">
                         <div class="fruite-img">
                           <img
-                            src="https://cdn.pixabay.com/photo/2020/03/16/12/46/food-4936947_640.jpg"
-                            class="img-fluid w-100 rounded-top"
+                            src="https://cdn.pixabay.com/photo/2021/02/04/12/47/food-5981232_640.jpg"
+                            class="other-image img-fluid w-100 rounded-top"
                             alt=""
                           />
                         </div>
@@ -385,44 +400,42 @@
                         <div
                           class="p-4 border border-secondary border-top-0 rounded-bottom"
                         >
-                          <h4>후라토식당 아브뉴프랑 판교점</h4>
+                          <h4>브런치카페</h4>
                           <p>
-                            식당 소개, 대화 주제<br>
-                            [메아미 개발자 모임]<br>
-                            ⭐️⭐️⭐️⭐️⭐️
+                            맛있는 브런치먹고 힘내봅시다
+                            <br>
+                            [시니어 프론트 개발자 모임]
                           </p>
+                          <div
+                            class="d-flex justify-content-between flex-lg-wrap"
+                          >
                           <!-- 프로필 추가하는 부분-->
                           <div class="profile-container">
                           <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
                             <span class="profile-text">1/3명</span>
                               </div>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
                             <p class="text-dark fs-5 fw-bold mb-0">
-                              2024.06.21(금) <br>
-                              오후 12:30
+                              2024.07.01(월) 오후 12:00
                             </p>
-                            
                             <a
                               href="#"
                               class="btn border border-secondary rounded-pill px-3 text-primary"
                               ><i
                                 class="fa fa-shopping-bag me-2 text-primary"
                               ></i>
-                              찜 기능 넣기</a
+                              Add to cart</a
                             >
                           </div>
                         </div>
                       </div>
                     </div>
                     
-                    <div class="col-md-6 col-lg-4 col-xl-3">
+                   <div class="col-md-6 col-lg-4 col-xl-3">
                       <div class="rounded position-relative fruite-item">
                         <div class="fruite-img">
                           <img
-                            src="https://cdn.pixabay.com/photo/2021/10/16/12/50/hotpot-6714953_640.jpg"
-                            class="img-fluid w-100 rounded-top"
+                            src="https://cdn.pixabay.com/photo/2022/11/18/14/19/thanksgiving-dinner-7600226_640.jpg"
+                            class="other-image img-fluid w-100 rounded-top"
                             alt=""
                           />
                         </div>
@@ -435,25 +448,22 @@
                         <div
                           class="p-4 border border-secondary border-top-0 rounded-bottom"
                         >
-                          <h4>부대찌개</h4>
+                          <h4>통닭식당</h4>
                           <p>
-                            부대찌개 먹으면서 이직 관련 이야기 나누실 분~!
-                            <br>
-                            [네이버 프론트 개발자 모임]
-                            ⭐️⭐️⭐️⭐️⭐️
+                            통닭먹고 파이팅
+                            <br> 
+                            [신입 프론트 개발자 모임]
                           </p>
                           <div
                             class="d-flex justify-content-between flex-lg-wrap"
                           >
-                           <!-- 프로필 추가하는 부분-->
+                          <!-- 프로필 추가하는 부분-->
                           <div class="profile-container">
                           <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
                             <span class="profile-text">1/3명</span>
                               </div>
-                              <br>
                             <p class="text-dark fs-5 fw-bold mb-0">
-                              2024.06.21(금) <br>
-                              오후 12:30
+                             2024.06.29(토) 오후 5:00
                             </p>
                             <a
                               href="#"
@@ -461,7 +471,7 @@
                               ><i
                                 class="fa fa-shopping-bag me-2 text-primary"
                               ></i>
-                              찜 기능 넣기</a
+                              Add to cart</a
                             >
                           </div>
                         </div>
@@ -472,7 +482,7 @@
                         <div class="fruite-img">
                           <img
                             src="https://cdn.pixabay.com/photo/2017/07/15/13/45/french-restaurant-2506490_640.jpg"
-                            class="img-fluid w-100 rounded-top"
+                            class="other-image img-fluid w-100 rounded-top"
                             alt=""
                           />
                         </div>
@@ -518,7 +528,7 @@
                         <div class="fruite-img">
                           <img
                             src="https://cdn.pixabay.com/photo/2021/02/04/12/47/food-5981232_640.jpg"
-                            class="img-fluid w-100 rounded-top"
+                            class="other-image img-fluid w-100 rounded-top"
                             alt=""
                           />
                         </div>
@@ -533,7 +543,7 @@
                         >
                           <h4>브런치카페</h4>
                           <p>
-                            맛있는 브런치먹고 힘내봅시다<
+                            맛있는 브런치먹고 힘내봅시다
                             <br>
                             [시니어 프론트 개발자 모임]
                           </p>
@@ -565,7 +575,7 @@
                         <div class="fruite-img">
                           <img
                             src="https://cdn.pixabay.com/photo/2022/11/18/14/19/thanksgiving-dinner-7600226_640.jpg"
-                            class="img-fluid w-100 rounded-top"
+                            class="other-image img-fluid w-100 rounded-top"
                             alt=""
                           />
                         </div>
@@ -612,7 +622,7 @@
                         <div class="fruite-img">
                           <img
                             src="https://cdn.pixabay.com/photo/2017/09/30/15/10/plate-2802332_640.jpg"
-                            class="img-fluid w-100 rounded-top"
+                            class="other-image img-fluid w-100 rounded-top"
                             alt=""
                           />
                         </div>
@@ -659,7 +669,7 @@
                         <div class="fruite-img">
                           <img
                             src="https://cdn.pixabay.com/photo/2023/07/20/16/11/bibimbap-8139739_640.jpg"
-                            class="img-fluid w-100 rounded-top"
+                            class="other-image img-fluid w-100 rounded-top"
                             alt=""
                           />
                         </div>
@@ -706,7 +716,7 @@
                         <div class="fruite-img">
                           <img
                             src="https://cdn.pixabay.com/photo/2017/08/03/21/48/drinks-2578446_640.jpg"
-                            class="img-fluid w-100 rounded-top"
+                            class="other-image img-fluid w-100 rounded-top"
                             alt=""
                           />
                         </div>
@@ -762,7 +772,7 @@
                         <div class="fruite-img">
                           <img
                             src="https://cdn.pixabay.com/photo/2018/04/02/18/29/food-3284704_640.jpg"
-                            class="img-fluid w-100 rounded-top"
+                            class="other-image img-fluid w-100 rounded-top"
                             alt=""
                           />
                         </div>
@@ -808,7 +818,7 @@
                         <div class="fruite-img">
                           <img
                             src="https://cdn.pixabay.com/photo/2017/08/02/00/51/food-2569257_640.jpg"
-                            class="img-fluid w-100 rounded-top"
+                            class="other-image img-fluid w-100 rounded-top"
                             alt=""
                           />
                         </div>
@@ -862,7 +872,7 @@
                         <div class="fruite-img">
                           <img
                             src="https://cdn.pixabay.com/photo/2014/04/22/02/56/pizza-329523_640.jpg"
-                            class="img-fluid w-100 rounded-top"
+                            class="other-image img-fluid w-100 rounded-top"
                             alt=""
                           />
                         </div>
@@ -889,7 +899,7 @@
                             <span class="profile-text">1/3명</span>
                               </div>
                             <p class="text-dark fs-5 fw-bold mb-0">
-                             2024.06.29(토) 오후 13:00
+                             기간, 시간
                             </p>
                             <a
                               href="#"
@@ -908,7 +918,7 @@
                         <div class="fruite-img">
                           <img
                             src="https://cdn.pixabay.com/photo/2023/07/26/16/43/food-8151625_640.jpg"
-                            class="img-fluid w-100 rounded-top"
+                            class="other-image img-fluid w-100 rounded-top"
                             alt=""
                           />
                         </div>
@@ -962,7 +972,7 @@
                         <div class="fruite-img">
                           <img
                             src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_640.jpg"
-                            class="img-fluid w-100 rounded-top"
+                            class="other-image img-fluid w-100 rounded-top"
                             alt=""
                           />
                         </div>
@@ -1008,7 +1018,7 @@
                         <div class="fruite-img">
                           <img
                             src="https://cdn.pixabay.com/photo/2017/07/28/14/29/macarons-2548827_640.jpg"
-                            class="img-fluid w-100 rounded-top"
+                            class="other-image img-fluid w-100 rounded-top"
                             alt=""
                           />
                         </div>
@@ -1062,7 +1072,7 @@
                         <div class="fruite-img">
                           <img
                             src="https://cdn.pixabay.com/photo/2020/10/01/22/39/gourmet-5619887_640.jpg"
-                            class="img-fluid w-100 rounded-top"
+                            class="other-image img-fluid w-100 rounded-top"
                             alt=""
                           />
                         </div>
@@ -1108,7 +1118,7 @@
                         <div class="fruite-img">
                           <img
                             src="https://cdn.pixabay.com/photo/2020/11/04/13/13/dessert-5712284_640.jpg"
-                            class="img-fluid w-100 rounded-top"
+                            class="other-image img-fluid w-100 rounded-top"
                             alt=""
                           />
                         </div>
@@ -1149,50 +1159,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                      <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                          <img
-                            src="https://cdn.pixabay.com/photo/2014/03/25/16/25/food-297051_640.png"
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                          style="top: 10px; left: 10px"
-                        >
-                          모바일
-                        </div>
-                        <div
-                          class="p-4 border border-secondary border-top-0 rounded-bottom"
-                        >
-                          <h4>Oranges</h4>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit sed do eiusmod te incididunt
-                          </p>
-                          <div
-                            class="d-flex justify-content-between flex-lg-wrap"
-                          >
-                          <!-- 프로필 추가하는 부분-->
-                          <div class="profile-container">
-                          <img src="https://cdn.pixabay.com/photo/2020/06/30/22/34/dog-5357794_640.jpg" alt="Profile Picture" class="profile-image">
-                            <span class="profile-text">1/3명</span>
-                              </div>
-                            <p class="text-dark fs-5 fw-bold mb-0">
-                              기간 시간
-                            </p>
-                            <a
-                              href="#"
-                              class="btn border border-secondary rounded-pill px-3 text-primary"
-                              ><i
-                                class="fa fa-shopping-bag me-2 text-primary"
-                              ></i>
-                              Add to cart</a
-                            >
-                          </div>
-                     
+                 
                         </div>
                       </div>
                     </div>
@@ -1219,97 +1186,48 @@
             <div class="col-lg-3">
               <a href="#">
                 <h1 class="text-primary mb-0">Eat IT</h1>
-                <p class="text-secondary mb-0">개발자 오프라인 모임</p>
+                <p class="text-secondary mb-0">먹고 마시며 즐기는 인맥 확장의 기회!<br>
+                                소소한 IT 소모임 “Eat IT”
+                                <br>🍽️🍝🍦🍕🍣🍳🍛🌭🍰🍛🍚🍮🌮☕️</p>
               </a>
             </div>
-            <div class="col-lg-6">
-              <div class="position-relative mx-auto">
-                <input
-                  class="form-control border-0 w-100 py-3 px-4 rounded-pill"
-                  type="number"
-                  placeholder="Your Email"
-                />
-                <button
-                  type="submit"
-                  class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white"
-                  style="top: 0; right: 0"
-                >
-                  Subscribe Now
-                </button>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="d-flex justify-content-end pt-3">
-                <a
-                  class="btn btn-outline-secondary me-2 btn-md-square rounded-circle"
-                  href=""
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a
-                  class="btn btn-outline-secondary me-2 btn-md-square rounded-circle"
-                  href=""
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a
-                  class="btn btn-outline-secondary me-2 btn-md-square rounded-circle"
-                  href=""
-                  ><i class="fab fa-youtube"></i
-                ></a>
-                <a
-                  class="btn btn-outline-secondary btn-md-square rounded-circle"
-                  href=""
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
             </div>
           </div>
         </div>
         <div class="row g-5">
           <div class="col-lg-3 col-md-6">
             <div class="footer-item">
-              <h4 class="text-light mb-3">Why People Like us!</h4>
+              <h4 class="text-light mb-3">NOTICE</h4>
               <p class="mb-4">
-                typesetting, remaining essentially unchanged. It was popularised
-                in the 1960s with the like Aldus PageMaker including of Lorem
-                Ipsum.
+               공지사항
               </p>
-              <a
-                href=""
-                class="btn border-secondary py-2 px-4 rounded-pill text-primary"
-                >Read More</a
-              >
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="d-flex flex-column text-start footer-item">
-              <h4 class="text-light mb-3">Shop Info</h4>
-              <a class="btn-link" href="">About Us</a>
-              <a class="btn-link" href="">Contact Us</a>
-              <a class="btn-link" href="">Privacy Policy</a>
-              <a class="btn-link" href="">Terms & Condition</a>
-              <a class="btn-link" href="">Return Policy</a>
-              <a class="btn-link" href="">FAQs & Help</a>
+              <h4 class="text-light mb-3">ABOUT US</h4>
+              <a class="btn-link" href="">Eat IT 소개</a>
+              <a class="btn-link" href="">회사 소개</a>
+              <a class="btn-link" href="">인재 채용</a>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6">
+        <div class="d-flex flex-column text-start footer-item">
+            <h4 class="text-light mb-3">팀원 소개</h4>
+            <a class="btn-link" href="">팀원 깃허브</a>
+            <div class="team-member">
+                <img src="/main-page/img/image_team.png" alt="Team Member" class="team-member-img">
+            </div>
+        </div>
+    </div>
+     <div class="col-lg-3 col-md-6">
             <div class="d-flex flex-column text-start footer-item">
-              <h4 class="text-light mb-3">Account</h4>
-              <a class="btn-link" href="">My Account</a>
-              <a class="btn-link" href="">Shop details</a>
-              <a class="btn-link" href="">Shopping Cart</a>
-              <a class="btn-link" href="">Wishlist</a>
-              <a class="btn-link" href="">Order History</a>
-              <a class="btn-link" href="">International Orders</a>
+              <h4 class="text-light mb-3">github</h4>
+              <a class="btn-link" href="">https://github.com/Practice-i5/EatIT-FE</a>
+              <a class="btn-link" href="">팀 노션</a>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-item">
-              <h4 class="text-light mb-3">Contact</h4>
-              <p>Address: 1429 Netus Rd, NY 48247</p>
-              <p>Email: Example@gmail.com</p>
-              <p>Phone: +0123 4567 8910</p>
-              <p>Payment Accepted</p>
-              <img src="img/payment.png" class="img-fluid" alt="" />
+    </div>
+</div>
             </div>
           </div>
         </div>
@@ -1324,8 +1242,7 @@
           <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
             <span class="text-light"
               ><a href="#"
-                ><i class="fas fa-copyright text-light me-2"></i>Your Site
-                Name</a
+                ><i class="fas fa-copyright text-light me-2"></i>Eat IT</a
               >, All right reserved.</span
             >
           </div>
