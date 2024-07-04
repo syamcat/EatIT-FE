@@ -605,3 +605,28 @@ button#showAllButton:hover {
     font-size: 18px;
     color: #000;
 }
+
+/*찜기능 하트*/
+/* style.css */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product {
+    margin-bottom: 20px;
+}
+
+.icon {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.icon:hover {
+    background-color: #f0f0f0;
+}

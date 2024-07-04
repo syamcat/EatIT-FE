@@ -188,4 +188,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //로그인 , 회원가입
 
+// 찜 기능, 하트 버튼
+let favorited = false; 
+
+function toggleFavorite(event) {
+    event.preventDefault(); // 기본 이벤트(링크 이동) 방지
+
+    favorited = !favorited;
+    const heartIcon = document.getElementById('heartIcon');
+
+    if (favorited) {
+        heartIcon.classList.remove('far');
+        heartIcon.classList.add('fas');
+        heartIcon.classList.add('text-danger');
+    } else {
+        heartIcon.classList.remove('fas');
+        heartIcon.classList.remove('text-danger');
+        heartIcon.classList.add('far');
+    }
+}
+
 
