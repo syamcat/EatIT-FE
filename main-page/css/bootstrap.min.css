@@ -263,6 +263,8 @@ figure {
 img,
 svg {
   vertical-align: middle;
+  /*max-height: 140px;*/
+  /*이게 근데 저렇게 max-height를 두면 모든 이미지가 작아져 버려서 다른 방법을 찾아야 함!*/
 }
 table {
   caption-side: bottom;
