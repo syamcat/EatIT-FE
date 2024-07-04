@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Fruitables - Vegetable Website Template</title>
+    <title>Details</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -48,9 +48,11 @@
         }
 
         .leader-data {
+            width: 300px;
             border: solid black;
             border-radius: 2%;
             box-shadow: insert;
+            position: fixed;
         }
 
         .profile-image {
@@ -111,10 +113,12 @@
         .header-menu-active {
             color: #FF0000 !important;
         }
+
         .active-red {
             color: white;
             background: #FF0000;
         }
+
         /* import button style */
         /* end */
 
@@ -129,7 +133,7 @@
         .page-header {
             position: relative;
             height: 300px;
-            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/front_image.png);
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/front_image.png);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -138,9 +142,57 @@
         .div-center {
             align-content: center;
         }
+
         .normal-btn {
             border-radius: 10px;
             border-style: hidden;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            align-items: stretch;
+            border-color: solid black;
+        }
+
+        #search-modal {
+            position: fixed;
+            display: none;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+
+            justify-content: center;
+            align-items: center;
+
+            /* width:100%;
+            height:100%; */
+
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        #search-modal.active {
+            display: flex;
+        }
+
+        #modal_contents {
+            position: relative;
+            top: 50%;
+            left: 50;
+
+            width: 400px;
+            height: 600px;
+
+            padding: 20px;
+
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+
+            transform: translateY(-50%);
         }
     </style>
 </head>
@@ -175,7 +227,7 @@
         <div class="container px-0">
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="index.html" class="navbar-brand"><img class=logo src="/img/logo.png" /></a>
+                    <a href="index.html" class="navbar-brand"><img class=logo src="img/logo.png" /></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
@@ -195,9 +247,9 @@
                                     </div> -->
                             <!-- </div> -->
                             <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
-                            <a href="#" class="nav-item nav-link" data-bs-toggle="modal"
-                                data-bs-target="#searchModal">검색</a>
-
+                            <!-- <a href="#" class="nav-item nav-link btn-open-modal" data-bs-toggle="modal"
+                                data-bs-target="#searchModal">검색</a> -->
+                            <a id="open" class="nav-item nav-link">검색</a>
                         </div>
                         <div class="d-flex m-3 me-0">
                             <a href="#" class="btn-notification my-auto me-4">
@@ -216,7 +268,7 @@
 
 
     <!-- Modal Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
@@ -229,6 +281,22 @@
                             aria-describedby="search-icon-1">
                         <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> -->
+    <div id="search-modal">
+        <!-- <div class="modal-dialog modal-fullscreen"> -->
+        <div id="modal_contents">
+            <!-- <h1 class="modal-title" id="exampleModalLabel div-center">모임 검색</h1> -->
+            <button id="Close"></button>
+            <div id="profile">
+                <img src="img/flower_doguri.png">
+                <div>
+                    <p>이름</p>
+                    <p>경력</p>
+                    <p>평가</p>
                 </div>
             </div>
         </div>
@@ -290,11 +358,11 @@
                                         <div class="contents-container-item">
                                             <p class="align-center fw-bold mb-3">참여가능나이</p>
                                             <div class="align-center">
-                                                <span>20</span><span>~</span><span>35</span><span>세</span></div>
+                                                <span>20</span><span>~</span><span>35</span><span>세</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </span>
-
                             </span>
                             <!-- <div class="d-flex mb-4">
                                     <i class="fa fa-star text-secondary"></i>
@@ -549,7 +617,7 @@
                                 <hr />
                                 <div>
                                     <div class="padding-bottom-20px padding-left-20px">
-                                        <img src="/img/sakura_doguri.png" class="profile-image">
+                                        <img src="img/sakura_doguri.png" class="profile-image" />
                                         <span>리더 닉네임</span>
                                     </div>
                                     <div class="leader-data-details">
@@ -763,7 +831,7 @@
                                 </div>
                             </div> -->
                         <div class="contents-container">
-                            <div class="contents-container-item"><img src="/img/honeybee_doguri.png"></div>
+                            <div class="contents-container-item"><img src="img/honeybee_doguri.png"></div>
                             <div class="contents-container-item">
                                 <p class="fw-bold align-center">꿀벌 도**</p>
                                 <p class="align-center">"iOS 개발자"</p>
@@ -784,7 +852,7 @@
                                 </div>
                             </div> -->
                         <div class="contents-container">
-                            <div class="contents-container-item"><img src="/img/sakura_doguri.png"></div>
+                            <div class="contents-container-item"><img src="img/sakura_doguri.png"></div>
                             <div class="contents-container-item">
                                 <p class="fw-bold align-center">벛꽃 도**</p>
                                 <p class="align-center">"iOS 개발자"</p>
@@ -805,7 +873,7 @@
                                 </div>
                             </div> -->
                         <div class="contents-container">
-                            <div class="contents-container-item"><img src="/img/flower_doguri.png"></div>
+                            <div class="contents-container-item"><img src="img/flower_doguri.png"></div>
                             <div class="contents-container-item">
                                 <p class="fw-bold align-center">넥카라 도**</p>
                                 <p class="align-center">"iOS 개발자"</p>
@@ -963,7 +1031,13 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js">
+        const modal = document.querySelector('.modal');
+        const btnOpenModal = document.querySelector('.btn-open-modal');
+        btnOpenModal.addEventListener("click", () => {
+            modal.style.display = "flex";
+        });
+    </script>
 </body>
 
 </html>
