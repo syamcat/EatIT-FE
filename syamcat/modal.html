@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modal</title>
+    <title>모달</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,19 +41,18 @@
             from {
                 opacity: 0;
             }
-
             to {
                 opacity: 1;
             }
         }
 
         #close {
-            float: right;
             font-size: 28px;
             font-weight: bold;
             cursor: pointer;
             border: none;
             background: none;
+            float: right;
         }
 
         #close:hover,
@@ -130,7 +129,7 @@
             <div class="profile-contents">
                 <div class="profile-header">
                     <div class="profile-pic">
-                        <img src="img/flower_doguri.png" alt="Profile Picture">
+                        <img src="img/flower_doguri.png" alt="프로필 사진">
                     </div>
                     <div class="profile-info">
                         <h5 class="profile-name">리더 닉네임</h5>
@@ -166,35 +165,7 @@
     <button id="open">프로필 보기</button>
     <a id="open-img" value="button"><img src="img/sakura_doguri.png" style="width:100px;height:100px;"></a>
     <a id="open-search" value="button">검색</a>
-    <script>
-        const openBtn = document.querySelector('#open');
-        const openImg = document.querySelector('#open-img');
-        const openSearch = document.querySelector('#open-search');
-        const closeBtn = document.querySelector('#close');
-        const profileModal = document.querySelector('#profile-modal');
-
-        openBtn.addEventListener("click", () => {
-            profileModal.classList.add("active");
-        });
-
-        openImg.addEventListener("click", () => {
-            profileModal.classList.add("active");
-        });
-
-        openSearch.addEventListener("click", () => {
-            profileModal.classList.add("active");
-        });
-
-        closeBtn.addEventListener("click", () => {
-            profileModal.classList.remove("active");
-        });
-
-        window.addEventListener("click", (event) => {
-            if (event.target === profileModal) {
-                profileModal.classList.remove("active");
-            }
-        });
-    </script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
