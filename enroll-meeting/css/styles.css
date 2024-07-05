@@ -95,6 +95,11 @@ form {
     margin-bottom: 5px;
     font-weight: bold;
 }
+.age-group label,
+.checkbox-group label,
+.time-group label {
+    font-weight: lighter;
+}
 
 .form-group input, 
 .form-group select, 
@@ -227,4 +232,34 @@ form {
 
 .logo {
     width: 100px;
+}
+
+.hashtag-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    width: 420px;
+    border-radius: 5px;
+}
+
+#hashtag-input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+}
+
+.hashtag {
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.hashtag .close {
+    margin-left: 5px;
+    cursor: pointer;
 }
