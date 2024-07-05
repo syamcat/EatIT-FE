@@ -89,10 +89,10 @@
             <div class="form-group">
                 <label for="duration">퇴장 제한 시간</label>
                 <div class="time-group">
-                    <div><input type="radio" name="duration" value="no-limit"/> 제한없음</div>
-                    <div><input type="radio" name="duration" value="1-hour"/> 1시간</div>
-                    <div><input type="radio" name="duration" value="2-hours"/> 2시간</div>
-                    <div><input type="radio" name="duration" value="3-hours"/> 3시간</div>
+                    <label><input type="radio" name="duration" value="no-limit"/> 제한없음</label>
+                    <label><input type="radio" name="duration" value="1-hour"/> 1시간</label>
+                    <label><input type="radio" name="duration" value="2-hours"/> 2시간</label>
+                    <label><input type="radio" name="duration" value="3-hours"/> 3시간</label>
                 </div>
             </div>
             <div class="form-group">
@@ -102,20 +102,20 @@
             <div class="form-group">
                 <label for="gender">성별</label>
                 <div class="checkbox-group">
-                    <div><input type="checkbox" name="gender" value="male"/> 남성</div>
-                    <div><input type="checkbox" name="gender" value="female"/> 여성</div>
-                    <div><input type="checkbox" name="gender" value="all"/> 상관없음</div>
+                    <label><input type="radio" name="gender" value="male"/> 남성</label>
+                    <label><input type="radio" name="gender" value="female"/> 여성</label>
+                    <label><input type="radio" name="gender" value="all"/> 상관없음</label>
                 </div>
             </div>
             <div class="form-group">
                 <label for="age">참여 가능 나이</label>
                 <div class="age-group">
-                    <div><input type="checkbox" name="age" value="20s"/> 20대</div>
-                    <div><input type="checkbox" name="age" value="30s"/> 30대</div>
-                    <div><input type="checkbox" name="age" value="40s"/> 40대</div>
-                    <div><input type="checkbox" name="age" value="50s"/> 50대</div>
-                    <div><input type="checkbox" name="age" value="60s"/> 60대</div>
-                    <div><input type="checkbox" name="age" value="all-ages"/> 상관없음</div>
+                    <label><input type="radio" name="age" value="20s"/> 20대</label>
+                    <label><input type="radio" name="age" value="30s"/> 30대</label>
+                    <label><input type="radio" name="age" value="40s"/> 40대</label>
+                    <label><input type="radio" name="age" value="50s"/> 50대</label>
+                    <label><input type="radio" name="age" value="60s"/> 60대</label>
+                    <label><input type="radio" name="age" value="all-ages"/> 상관없음</label>
                 </div>
             </div>
             <div class="form-group">
@@ -124,6 +124,6 @@
         </form>
     </div>
     <script src="js/script.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtrF28U4XgcY4rrHUzvKPhOtiOJzbxwRQ&callback=initMap" async defer></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtrF28U4XgcY4rrHUzvKPhOtiOJzbxwRQ&callback=initMap&libraries=places"></script>
 </body>
 </html>

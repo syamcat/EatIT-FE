@@ -95,6 +95,11 @@ form {
     margin-bottom: 5px;
     font-weight: bold;
 }
+.age-group label,
+.checkbox-group label,
+.time-group label {
+    font-weight: lighter;
+}
 
 .form-group input, 
 .form-group select, 
